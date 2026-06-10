@@ -59,4 +59,136 @@ int main ()
         cout<< endl;
      }
     cout<< endl << endl;
+
+
+    int popr=0;// poprawnosc ( jak zly ruch to powturzy) ( jak juz bedzie swap to break koniecznie)
+    int win=0;
+    string f, a ;//f figura , a skad 1
+    int b , c; // b skad 2 , c true a
+
+
+    for (int i=0;win==0;i++)
+    {
+        if (i%2==0 || i==0){
+            cout << "Ruch bialych"<< endl;
+            cout<< " Podaj figure: ";
+
+            cin>> f;
+
+
+            while (popr=0){
+
+
+
+            if (f=="Pb"){
+            cout<< "Skad?"<<endl;
+            cin>> a;
+            cin >> b;
+
+            if(a == "A") c = 0;
+
+            if(a == "B") c = 1;
+
+            if(a == "C") c = 2;
+
+            if(a == "D") c = 3;
+
+            if(a == "E") c = 4;
+
+            if(a == "F") c = 5;
+
+            if(a == "G") c = 6;
+
+            if(a == "H") c = 7;
+
+            b=b-1;
+
+            if (t[c][b] !="Pb") cout<< "Nie przejdzie!";
+
+
+
+            cout<< "Dokand?"<< endl;
+
+
+            }
+
+
+            if (f=="Wb"){
+
+            }
+
+            if (f=="Sb"){
+
+            }
+
+            if (f=="Gb"){
+
+            }
+
+            if (f=="Hb"){
+
+            }
+
+            if (f=="Kb"){
+
+            }
+
+            else cout<< "Nuh uh";
+
+            }
+
+
+        }
+
+
+
+
+
+
+        else{
+            cout << "Ruch czarnych" << endl;
+
+            if (f=="Pc"){
+
+            }
+
+            if (f=="Wc"){
+
+            }
+
+            if (f=="Sc"){
+
+            }
+
+            if (f=="Gc"){
+
+            }
+
+            if (f=="Hc"){
+
+            }
+
+            if (f=="Kc"){
+
+            }
+
+            else cout<< "Nuh uh";
+
+
+
+        }
+
+
+
+
+
+
+    }
+    if (win ==1) cout<< "Wygrana bia³ych";
+
+    if (win == 2) cout << "Wygrana czarnych";
+
+
+
+
 }
